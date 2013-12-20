@@ -48,7 +48,7 @@
             <div class="nav-collapse nav-collapse_  collapse">
                   <ul class="nav sf-menu">
                   <form method="post" action="/FreeArt/search">
-                  <li id="commun"> zedzedzed<input type="text" name="motClef" value="${modele.motClef }"/> <input type="submit" value="Go"/></li>
+                  <li id="commun"> Mot clef<input type="text" name="motClef" value="${modele.motClef }"/> <input type="submit" value="Go"/></li>
                   </form>
                 <li class="active"><a href="">Home</a></li>
                 <li><a href="/FreeArt/catalogue">Catalogues</a></li>
