@@ -2,7 +2,7 @@ package pckMetier;
 
 import java.util.List;
 
-public interface IMetierCatalogue {
+public interface IMetier {
     public List<Produit> getProduitParMotClef( String motClef );
 
     public void addProduit( Produit p );
@@ -10,5 +10,7 @@ public interface IMetierCatalogue {
     public void supprimerProduit( Produit p );
 
     public List<Produit> getTousLesProduits();
+
+    public Utilisateur getUtilisateurParPseudoEtMdp( String pseudo, String mdp );
 
 }

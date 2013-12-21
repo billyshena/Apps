@@ -1,4 +1,4 @@
-<div class="bg-content">
+        <div class="bg-content">
       <div class="container">
     <div class="row">
           <div class="span12"> 
@@ -16,7 +16,7 @@
         <div class="block-slogan">
               <h2>	Free Art!</h2>
               <div>
-            <p>Venez partagez vos oeuvres ! <br/> Robert Doisneau : <ul><li>« Quand on est prisonnier de l'image, cela vous donne toutes les audaces. »</li><li> « Suggérer, c'est créer. Décrire, c'est détruire. » </li> </ul></p>
+            <p> Venez partagez vos oeuvres ! <br/> Robert Doisneau : <ul><li>« Quand on est prisonnier de l'image, cela vous donne toutes les audaces. »</li><li> « Suggérer, c'est créer. Décrire, c'est détruire. » </li> </ul> </p>
           </div>
             </div>
       </div>
@@ -120,4 +120,48 @@
 <!--             </div> -->
 <!--       </div> -->
 <!--         </div> -->
-   
+      <div class="container">
+          <div class="row">
+        <article class="span6">
+              <h3>A propos de nous</h3>
+              <div class="wrapper">
+            <figure class="img-indent"><img src="img/15.jpg " alt="" /></figure>
+            <div class="inner-1 overflow extra">
+                  <div class="txt-1"></div>
+                  					  
+                </div>
+          </div>
+            </article>
+        <article class="span6">
+              <h3>Some quick links</h3>
+                <div class="wrapper">
+                    <ul class="list list-pad">
+                          <li><a href="http://www.deviantart.com/digitalart/">Deviant Art</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list list-pad">
+                          <li><a href="#">Campaigns</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list list-pad">
+                          <li><a href="#">Campaigns</a></li>
+                          <li><a href="#">Portraits</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Fine Art</a></li>
+                        </ul>
+                    <ul class="list">
+                          <li><a href="#">Advertising</a></li>
+                          <li><a href="#">Lifestyle</a></li>
+                          <li><a href="#">Love story</a></li>
+                          <li><a href="#">Landscapes</a></li>
+                    </ul>
+                </div>
+            </article>
+      </div>
+      </div>  
+      </div>
+      </div> 

@@ -16,5 +16,9 @@ public class TestMetier {
             System.out.println( "Nom : " + prod.getNomProduit() );
         }
 
+        Utilisateur user = metier.getUtilisateurParPseudoEtMdp( "oliv", "oliv" );
+        System.out.println( "Prenom : " + user.getPrenom() );
+
     }
+
 }

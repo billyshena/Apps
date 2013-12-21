@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import pckMetier.IMetierCatalogue;
+import pckMetier.IMetier;
 import pckMetier.MetierImplement;
 import pckMetier.Produit;
 import pckModele.ProduitModele;
@@ -20,7 +20,7 @@ public class ProduitServlet extends HttpServlet {
      */
     private static final long   serialVersionUID = 1L;
     private static final String VUE              = "/WEB-INF/produit.jsp";
-    private IMetierCatalogue    metier;
+    private IMetier    metier;
 
     @Override
     public void init() throws ServletException {

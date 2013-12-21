@@ -12,8 +12,9 @@
 <meta name="author" content="">  
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/form.css" media="screen">
 <link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -23,6 +24,8 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>    
 <script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+<script type="text/javascript" src="js/ChunkFive_400.font.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
 
 <script>		

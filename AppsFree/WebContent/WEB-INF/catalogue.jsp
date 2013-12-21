@@ -1,4 +1,8 @@
-<table border="1" width="80%">
+<div class="bg-content"> 
+    <div class="row-1">
+        <div class="container">
+    		<div class="row-2">
+<table border="1" width="100%">
 	<tr>
 		<th> Id </th> <th> Nom </th> <th> Prix </th>
 	</tr>
@@ -10,3 +14,7 @@
 	</tr>
 </c:forEach>
 </table>
+</div>
+</div>
+</div>
+</div>

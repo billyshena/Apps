@@ -8,14 +8,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import pckMetier.IMetierCatalogue;
+import pckMetier.IMetier;
 import pckMetier.MetierImplement;
 import pckMetier.Produit;
 import pckModele.ProduitModele;
 
 public class CatalogueServlet extends HttpServlet {
     private static final String VUE = "/WEB-INF/catalogue.jsp";
-    private IMetierCatalogue    metier;
+    private IMetier    metier;
 
     @Override
     public void init() throws ServletException {

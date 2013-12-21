@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MetierImplement implements IMetierCatalogue {
+public class MetierImplement implements IMetier {
 
     @Override
     public List<Produit> getProduitParMotClef( String motClef ) {
@@ -70,6 +70,36 @@ public class MetierImplement implements IMetierCatalogue {
             return null;
         }
 
+    }
+
+    @Override
+    public Utilisateur getUtilisateurParPseudoEtMdp( String pseudo, String mdp ) {
+        Connection connection = SingletonConnexion.getConnection();
+        try {
+
+            PreparedStatement ps = connection
+                    .prepareStatement( "select * from utilisateur;" );
+            // ps.setString( 1, pseudo );
+            // ps.setString( 2, mdp );
+            ResultSet rs = ps.executeQuery();
+            while ( rs.next() ) {
+                if ( rs.getString( "pseudo" ).equals( pseudo ) && rs.getString( "mdp" ).equals( mdp ) ) {
+                    Utilisateur user = new Utilisateur();
+                    user.setPseudo( rs.getString( "pseudo" ) );
+                    user.setPassword( rs.getString( "mdp" ) );
+                    user.setPrenom( "lol" );
+                    return user;
+                }
+            }
+
+            return null;
+
+        } catch ( Exception e ) {
+            // TODO Auto-generated catch block
+            System.err.println( "Erreur mon pote : " + e.getMessage() );
+            e.printStackTrace();
+            return null;
+        }
     }
 
 }
