@@ -1,7 +1,7 @@
 <div class="wrapper">
 			<div class="content">
 				<div id="form_wrapper" class="form_wrapper">
-					<form class="login active" method="post" action="/FreeArt/auth">
+					<form style="text-align:center;" class="login active" method="post" action="/FreeArt/auth">
 						<h3>Login</h3>
 							<h5> <c:out value="${message }"></c:out> </h5>
 						<div>

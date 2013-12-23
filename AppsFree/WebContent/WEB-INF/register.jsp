@@ -1,5 +1,6 @@
-<form class="register">
+<form method="post" style="text-align:center;" class="register" action="/FreeArt/newUser" >
 						<h3>Enregistrez-vous</h3>
+						<h5> <c:out value="${errorMessage }"></c:out> </h5>
 						<div class="column">
 							<div>
 								<label>Prénom:</label>

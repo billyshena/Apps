@@ -6,8 +6,8 @@
         	<description> Toutes les pages</description>
         	<url-pattern> *.jsp</url-pattern>
         	<page-encoding> UTF-8</page-encoding>
-        	<include-prelude> header.jsp</include-prelude>
         	<include-prelude> /WEB-INF/taglibs.jsp </include-prelude>
+        	<include-prelude> header.jsp</include-prelude>
         	<include-coda> footer.jsp</include-coda>
         </jsp-property-group>
     </jsp-config>
@@ -80,5 +80,15 @@
   <servlet-mapping>
     <servlet-name>Catalogue</servlet-name>
     <url-pattern>/catalogue</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>NouveauUser</servlet-name>
+    <servlet-class>pckController.NewUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>NouveauUser</servlet-name>
+    <url-pattern>/newUser</url-pattern>
   </servlet-mapping>
 </web-app>

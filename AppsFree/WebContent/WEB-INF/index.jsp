@@ -2,6 +2,10 @@
       <div class="container">
     <div class="row">
           <div class="span12"> 
+          <c:if test="${!empty utilisateur.prenom && utilisateur.nom }">
+          	<c:set var="user" value="utilisateur"></c:set>
+          	<c:out value="${ sessionScope[user]}"></c:out>
+          </c:if>
         <!-- slider -->
         <div class="flexslider">
               <ul class="slides">

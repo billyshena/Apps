@@ -3,6 +3,7 @@ package pckMetier;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -102,4 +103,24 @@ public class MetierImplement implements IMetier {
         }
     }
 
+    @Override
+    public void addUser( Utilisateur user ) throws SQLException {
+        Connection connection = SingletonConnexion.getConnection();
+        try {
+            String query = "INSERT INTO Utilisateur( pseudo, mdp, email, nom, prenom, website) VALUES(?,?,?,?,?,?)";
+            PreparedStatement ps = connection.prepareStatement( query );
+            ps.setString( 1, user.getPseudo() );
+            ps.setString( 2, user.getPassword() );
+            ps.setString( 3, user.getEmail() );
+            ps.setString( 4, user.getNom() );
+            ps.setString( 5, user.getPrenom() );
+            ps.setString( 6, user.getWebsite() );
+            ps.executeUpdate();
+        } catch ( Exception e ) {
+            // TODO Auto-generated catch block
+            System.err.println( "Erreur mon pote : " + e.getMessage() );
+            e.printStackTrace();
+        }
+
+    }
 }

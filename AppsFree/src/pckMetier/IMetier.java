@@ -1,5 +1,6 @@
 package pckMetier;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface IMetier {
@@ -12,5 +13,7 @@ public interface IMetier {
     public List<Produit> getTousLesProduits();
 
     public Utilisateur getUtilisateurParPseudoEtMdp( String pseudo, String mdp );
+
+    public void addUser( Utilisateur user ) throws SQLException;
 
 }

@@ -19,7 +19,6 @@ public class Utilisateur implements Serializable {
         this.pseudo = "";
         this.password = "";
         this.email = "";
-
     }
 
     public Long getIdUtilisateur() {
